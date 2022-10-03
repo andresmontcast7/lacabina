@@ -146,9 +146,9 @@ export const Plan = ({resp}) => {
                 </Flex>
                 <SimpleGrid columns={[1, , 2, 1, 2]} spacingY={4}>
 
-                { resp?.features?.map(resp => {
+                { resp?.features?.map((resp,i) => {
                   return(
-                    <Feature>{resp}</Feature>
+                    <Feature key={i} >{resp}</Feature>
                   )
                 })}
                   

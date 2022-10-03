@@ -47,8 +47,8 @@ function servicios() {
       <CaptionCarousel></CaptionCarousel>
 
       {/* PLANES */}
-      {planes.map((resp) => {
-        return <Plan resp={resp}></Plan>;
+      {planes.map((resp, i) => {
+        return <Plan key={i} resp={resp}></Plan>;
       })}
       <Footer></Footer>
     </>
