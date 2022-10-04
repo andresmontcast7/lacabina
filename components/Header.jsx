@@ -53,11 +53,12 @@ const MobileMenu = ()=>{
 function Example() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <header>
-      {/* <Button fontSize="3.4rem" color="yellow.400" as={FiMoon}  onClick={toggleColorMode}>
+     <Button p="1px" bg="black" fontSize="0.9rem" color="yellow.400"   onClick={toggleColorMode}>
+       <FiMoon  ></FiMoon>
+        
       {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button> */}
-    </header>
+      </Button> 
+   
   )
 }
 
@@ -94,7 +95,7 @@ export const Header = () => {
   <Box display={{base:"none", lg:"inline-block"}} >
   <Example ></Example>
   </Box>
-  {/* <MobileMenu ></MobileMenu> */}
+  <MobileMenu ></MobileMenu> 
 
     </Box>
   
