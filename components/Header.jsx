@@ -69,8 +69,8 @@ export const Header = () => {
  <Box color="white"  pr="8"  display="flex" justifyContent={{base:"space-between", lg:"space-around"}}  alignItems="center">
     {/* LEFT */}
     <Box  flexShrink="10" width="8rem">
-     <Image src={logo}></Image>
-     
+     <Image alt="logo" src={logo}></Image>
+
     </Box>
           {/* MOBILE MENU */}
         

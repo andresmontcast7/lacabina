@@ -199,7 +199,7 @@ export const Plan = ({resp}) => {
                     Learn more about our membership
                   </Text> */}
                   <Button w="300px" colorScheme="brand" py={6}>
-                    Get Access
+                    Get&apos;Access
                   </Button>
                   {/* <Text align="center" fontWeight="semibold">
                     Get a free sample

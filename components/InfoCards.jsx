@@ -33,6 +33,7 @@ export const InfoCards = ({dataCard}) => {
             src={
               dataCard.imge
             }
+            alt="imageCard"
             objectFit="cover"
             boxSize="100%"
             objectPosition="center"
