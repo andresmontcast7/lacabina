@@ -24,7 +24,7 @@ const MobileMenu = ()=>{
    
     <Menu>
     <Box>
-    <MenuButton display={{base:"inline-block", lg:"none"}}  as={HamburgerIcon} fontSize="2rem" colorScheme='yellow' color="white">
+    <MenuButton display={{base:"inline-block", lg:"none"}}  as={HamburgerIcon} fontSize="2rem" colorScheme='yellow.400' color="white">
   </MenuButton>
     </Box>
   
@@ -54,9 +54,9 @@ function Example() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <header>
-      <Button fontSize="3.4rem" color="yellow.500" as={FiMoon} colorScheme="blackAlpha" onClick={toggleColorMode}>
+      {/* <Button fontSize="3.4rem" color="yellow.400" as={FiMoon}  onClick={toggleColorMode}>
       {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
+      </Button> */}
     </header>
   )
 }
@@ -84,7 +84,7 @@ export const Header = () => {
     <NextLink  href='/servicios' passHref >
     <Link   display={{base:"none",lg:"inline-block"}}>About</Link>
     </NextLink>
-    <Link href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"   display={{base:"none",lg:"inline-block"}}><Button rightIcon={<MdCall />} colorScheme='yellow' variant='solid'>
+    <Link href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"   display={{base:"none",lg:"inline-block"}}><Button rightIcon={<MdCall />} colorScheme='yellow.400' variant='solid'>
     Contactanos
   </Button></Link>
     <Link  href="https://api.whatsapp.com/send?phone=50254446684&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80"   display={{base:"none",lg:"inline-block" }}> <Button leftIcon={<BsFillCalendar2DayFill />} colorScheme='yellow' variant='solid'>
@@ -93,7 +93,7 @@ export const Header = () => {
   <Box display={{base:"none", lg:"inline-block"}} >
   <Example ></Example>
   </Box>
-  <MobileMenu ></MobileMenu>
+  {/* <MobileMenu ></MobileMenu> */}
 
     </Box>
   

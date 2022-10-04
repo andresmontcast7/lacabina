@@ -17,7 +17,7 @@
             title:"Corporativo",
             title2:"WOoof woof  ",
             desc:"Ya sea que se trate de una activación de marca, un retiro corporativo o una feria comercial, podemos crear una activación con nuestro Video 360 con material echo por expertos en diseño digital que mejorará el conocimiento y la exposición de la marca.",
-            imge:"/assets/imgInf/fiesta.png"
+            imge:"https://i.ibb.co/nwSqkvp/fiesta.png"
         }
     ]
 
