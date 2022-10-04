@@ -66,7 +66,7 @@ export const Header = () => {
   
   return (
  <Box shadow="sm" padding="3"  backgroundColor="black"  >
- <Box color="red" color="white"  pr="8"  display="flex" justifyContent={{base:"space-between", lg:"space-around"}}  alignItems="center">
+ <Box color="white"  pr="8"  display="flex" justifyContent={{base:"space-between", lg:"space-around"}}  alignItems="center">
     {/* LEFT */}
     <Box  flexShrink="10" width="8rem">
      <Image src={logo}></Image>

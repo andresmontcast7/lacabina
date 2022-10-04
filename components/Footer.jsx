@@ -17,7 +17,7 @@ import Image from 'next/image';
   const Logo = (props) => {
     return (
       <Box width="4rem">
-<Image src={logo} ></Image>
+<Image alt="logo" src={logo} ></Image>
       </Box>
       
     );
