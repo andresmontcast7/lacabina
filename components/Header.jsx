@@ -70,6 +70,7 @@ export const Header = () => {
     {/* LEFT */}
     <Box  flexShrink="10" width="8rem">
      <Image src={logo}></Image>
+     
     </Box>
           {/* MOBILE MENU */}
         
