@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { Header } from '../components/Header';
 import { InfoCards } from '../components/InfoCards';
 import { VideoHeader } from '../components/VideoHeader';
 import styles from '../styles/Home.module.css';
 import data from '../services/infoCardsData'
-import { Box, Wrap, WrapItem } from '@chakra-ui/layout';
+import { Wrap, WrapItem } from '@chakra-ui/layout';
 import { Footer } from '../components/Footer';
-import { Testimonials } from '../components/Testimonials';
+
 
 
 
