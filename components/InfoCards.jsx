@@ -10,6 +10,10 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+
+
+
+
 export const InfoCards = ({dataCard}) => {
     console.log(dataCard)
   return (

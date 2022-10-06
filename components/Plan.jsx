@@ -3,14 +3,191 @@ import { Icon } from '@chakra-ui/icon';
 import { chakra } from '@chakra-ui/system';
 import { Button } from '@chakra-ui/button';
 import { useColorModeValue } from '@chakra-ui/color-mode';
+import { useState } from 'react';
 
 
 
+export const InfoCardsMob =({resp}) => {
+  const [frequency, setFrequency] = useState("month");
+
+  const Feature = (props) => {
+    return (
+      <Flex align="center"
+      display={{base:"inline-block" , lg:"none"}}
+      
+      >
+        <Flex shrink={0}>
+          <Icon
+            boxSize={5}
+            mt={1}
+            mr={2}
+            color="brand.500"
+            _dark={{
+              color: "brand.300",
+            }}
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clipRule="evenodd"
+            ></path>
+          </Icon>
+        </Flex>
+        <Box ml={4}>
+          <chakra.span
+            mt={2}
+            color="gray.700"
+            _dark={{
+              color: "gray.400",
+            }}
+          >
+            {props.children}
+          </chakra.span>
+        </Box>
+      </Flex>
+    );
+  };
+
+  return (
+    <Flex 
+      w={{base:"sm", md:"full"}}
+      bg="#edf3f8"
+      _dark={{
+        bg: "#3e3e3e",
+      }}
+      p={{base:"0", lg:"50"} }
+      alignItems="center"
+      justifyContent="center"
+      display={{base:"inline-block" , md:"none"}}
+    >
+      <Box
+     
+        bg="gray.100"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <Box pt="2rem"  w="full" px={[10, , 4]} mx="auto" textAlign="center">
+          <Text mb={1}fontSize={{base:"x-large"}} fontWeight="bold" lineHeight="tight">
+           {resp.plan}
+          </Text>
+          <chakra.p
+            mb={6}
+            fontSize={["lg", , "xl"]}
+            color="gray.600"
+            _dark={{
+              color: "gray.400",
+            }}
+          >
+          {resp.desc}
+          </chakra.p>
+            
+        </Box>
+        <Box maxW="7xl" py="5" mx="auto">
+          <SimpleGrid columns={[1, , , 3]} gap={[16, 8]}>
+            <Box
+              rounded={["none", "lg"]}
+              shadow={["none", "md"]}
+              bg="white"
+              _dark={{
+                bg: "gray.800",
+              }}
+            >
+              <Flex
+                direction="column"
+                justify="space-between"
+                p="6"
+                borderBottomWidth="1px"
+                color="gray.200"
+                _dark={{
+                  color: "gray.600",
+                }}
+              >
+                <chakra.p
+                  mb={1}
+                  fontSize="lg"
+                  fontWeight="semibold"
+                  color="gray.700"
+                  _dark={{
+                    color: "gray.400",
+                  }}
+                >
+                  Free
+                </chakra.p>
+                <Text
+                  mb={2}
+                  fontSize="5xl"
+                  fontWeight={["bold", "extrabold"]}
+                  color="gray.900"
+                  _dark={{
+                    color: "gray.50",
+                  }}
+                  lineHeight="tight"
+                >
+                  Q{resp.precio}
+                  <chakra.span
+                    fontSize="2xl"
+                    fontWeight="medium"
+                    color="gray.600"
+                    _dark={{
+                      color: "gray.400",
+                    }}
+                  >
+                 
+                  </chakra.span>
+                </Text>
+                {/* <Link
+                  w={["full", , "auto"]}
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  px={5}
+                  py={3}
+                  border="solid transparent"
+                  fontWeight="bold"
+                  rounded="md"
+                  shadow="md"
+                  _light={{
+                    color: "white",
+                  }}
+                  bg="brand.600"
+                  _dark={{
+                    bg: "brand.500",
+                  }}
+                  _hover={{
+                    bg: "brand.700",
+                    _dark: {
+                      bg: "brand.600",
+                    },
+                  }}
+                >
+                  Get started
+                </Link> */}
+              </Flex>
+              <Stack direction="column" p="6" spacing="3" flexGrow="1">
+              {resp?.features?.map((resp, i) => {
+                return(
+                  <Feature key={i}>{resp}</Feature>
+                )
+              })}
+              </Stack>
+            </Box>
+
+          
+
+          </SimpleGrid>
+        </Box>
+      </Box>
+    </Flex>
+  );
+};
 
 export const Plan = ({resp}) => {
 
   const topBg = useColorModeValue("black.100", "black");
-  const bottomBg = useColorModeValue("white", "gray.900");
+  const bottomBg = useColorModeValue("black.100", "gray.900");
 
   const Feature = (props) => {
     return (
@@ -50,6 +227,7 @@ export const Plan = ({resp}) => {
   };
 
   return (
+    
     <Flex
       boxSize="full"
       bg="#F9FAFB"
@@ -59,7 +237,10 @@ export const Plan = ({resp}) => {
       p={10}
       alignItems="center"
       justifyContent="center"
+      
     >
+
+    <InfoCardsMob  resp={resp} ></InfoCardsMob>
       <Box
         mx="auto"
         textAlign={{
@@ -70,6 +251,7 @@ export const Plan = ({resp}) => {
         shadow="base"
         w="full"
         bg={bottomBg}
+        display={{base:"none", md:"inline-block"}}
       >
         <Box pt={20} rounded="md" bg={topBg}>
           <Box w="full" px={[10, , 4]} mx="auto">
@@ -201,6 +383,7 @@ export const Plan = ({resp}) => {
                   <Button w="300px" colorScheme="brand" py={6}>
                     Get&apos;Access
                   </Button>
+
                   {/* <Text align="center" fontWeight="semibold">
                     Get a free sample
                     <chakra.span
@@ -221,5 +404,6 @@ export const Plan = ({resp}) => {
         </Box>
       </Box>
     </Flex>
+    
   );
 }

@@ -23,7 +23,7 @@ import { VideoHeader } from './VideoHeader';
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}
+          pt={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
@@ -86,7 +86,7 @@ import { VideoHeader } from './VideoHeader';
             
             <Box
               position={'relative'}
-              height={'300px'}
+              height={ {base:"100%" , lg:'300px'} }
               rounded={'2xl'}
               boxShadow={'2xl'}
               width={'full'}
