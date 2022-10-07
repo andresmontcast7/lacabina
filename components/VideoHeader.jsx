@@ -29,12 +29,12 @@ const Arrow = createIcon({
 
 
 
-export const VideoHeader = ({video}) => {
+export const VideoHeader = ({video}) => { 
   return (
 
     <Box position="relative">
     <Box>
-    <video playsinline  width="100%" muted autoPlay loop src={video} />
+    <video width="100%" muted autoPlay loop  playsinline preload  poster="" src={video} />
     </Box>
     <Box position="absolute" margin="0" >
    
