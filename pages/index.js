@@ -6,8 +6,8 @@ import styles from '../styles/Home.module.css';
 import data from '../services/infoCardsData'
 import { Wrap, WrapItem } from '@chakra-ui/layout';
 import { Footer } from '../components/Footer';
-
-
+import CaptionCarousel from '../components/CaptionCarouse';
+import { sliderHome } from '../services/infoHomeSliderData';
 
 
 
@@ -40,6 +40,8 @@ export default function Home() {
          )
        })}
        </Wrap>
+
+       {/* <CaptionCarousel cards={sliderHome} speed={500} autoSpeed={3000} ></CaptionCarousel> */}
 
 
 

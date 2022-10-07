@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import Header from "../components/Header";
 import HeroService from "../components/HeroService";
 import { Plan } from "../components/Plan";
+import cards from "../services/infoSlider";
 
 function servicios() {
   const planes = [
@@ -44,7 +45,7 @@ function servicios() {
       {/* Hero */}
       <HeroService></HeroService>
       {/* SLIDER */}
-      <CaptionCarousel></CaptionCarousel>
+      <CaptionCarousel speed={500} autoSpeed={3000} cards={cards}></CaptionCarousel>
 
       {/* PLANES */}
       {planes.map((resp, i) => {

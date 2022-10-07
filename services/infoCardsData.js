@@ -5,7 +5,7 @@
             title:"Bodas",
             title2:"Hello ",
             desc:"Creamos una experiencia divertida, personalizada y de alta calidad en los mejores momentos que todos recordarán.",
-            imge:"https://i.ibb.co/g9CCzPK/boda.jpg"
+            imge:'/img/bodaEvento.png'
         },
         {
             title:"Fiestas",
@@ -17,7 +17,7 @@
             title:"Corporativo",
             title2:"WOoof woof  ",
             desc:"Ya sea que se trate de una activación de marca, un retiro corporativo o una feria comercial, podemos crear una activación con nuestro Video 360 con material echo por expertos en diseño digital que mejorará el conocimiento y la exposición de la marca.",
-            imge:"https://i.ibb.co/nwSqkvp/fiesta.png"
+            imge:"/img/eventoLac.png"
         }
     ]
 
