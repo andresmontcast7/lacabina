@@ -34,7 +34,7 @@ export const VideoHeader = ({video}) => {
 
     <Box position="relative">
     <Box>
-    <video  width="100%" muted autoPlay loop src={video} />
+    <video playsinline  width="100%" muted autoPlay loop src={video} />
     </Box>
     <Box position="absolute" margin="0" >
    
