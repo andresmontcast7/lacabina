@@ -27,7 +27,7 @@ export default function Home() {
        {/* HEADER */}
        <Header ></Header>
         {/* VIDEO */}
-       <VideoHeader video={"litecabin.mp4"}></VideoHeader>
+       <VideoHeader autoPlay={true} loop={true} video={"litecabin.mp4"}></VideoHeader>
        {/* Cards */}
        
        <Wrap align="center" justify="center" spacing='30px'>

@@ -92,7 +92,7 @@ import { VideoHeader } from './VideoHeader';
               width={'full'}
               overflow={'hidden'}>
              
-              <VideoHeader video={"lacabinaroverlite.mp4"}></VideoHeader>
+              <VideoHeader autoPlay={true} loop={true} video={"lacabinaroverlite.mp4"}></VideoHeader>
             </Box>
           </Flex>
         </Stack>

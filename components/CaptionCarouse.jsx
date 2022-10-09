@@ -130,7 +130,7 @@ export default function CaptionCarousel({cards,speed,autoSpeed}) {
                 {card.title}
               </Heading>
                 <Image  src={card.image}></Image>
-                <VideoHeader  video={card.video}></VideoHeader>
+                <VideoHeader  autoPlay={true} loop={true} controls={false} preload={"metadata"} video={card.video}></VideoHeader>
                 <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
                   {card.text}
                 </Text>  
