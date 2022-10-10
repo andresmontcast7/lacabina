@@ -45,7 +45,7 @@ function servicios() {
       {/* Hero */}
       <HeroService></HeroService>
       {/* SLIDER */}
-      <CaptionCarousel speed={500} autoSpeed={3000} cards={cards}></CaptionCarousel>
+      <CaptionCarousel speed={500} autoSpeed={5000} cards={cards}></CaptionCarousel>
 
       {/* PLANES */}
       {planes.map((resp, i) => {

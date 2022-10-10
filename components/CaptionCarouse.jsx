@@ -16,6 +16,7 @@ import { useState } from 'react';
 import { VideoHeader } from './VideoHeader';
 
 import { Image } from '@chakra-ui/image';
+import Iframe from 'react-iframe';
 
 
 // Settings for the slider
@@ -28,7 +29,7 @@ export default function CaptionCarousel({cards,speed,autoSpeed}) {
     arrows: false,
     fade: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: speed,
     autoplaySpeed: autoSpeed,
     slidesToShow: 1,
@@ -130,7 +131,9 @@ export default function CaptionCarousel({cards,speed,autoSpeed}) {
                 {card.title}
               </Heading>
                 <Image  src={card.image}></Image>
-                <VideoHeader  autoPlay={true} loop={true} controls={false} preload={"metadata"} video={card.video}></VideoHeader>
+                <VideoHeader  autoPlay={true} loop={false} controls={true}  preload={"none"} video={card.video}></VideoHeader> 
+              
+
                 <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
                   {card.text}
                 </Text>  

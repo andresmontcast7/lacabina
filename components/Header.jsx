@@ -72,7 +72,7 @@ const MobileMenu = ()=>{
 
 
 
-export const Header = () => {
+export const Header = () => { 
   const { colorMode, toggleColorMode } = useColorMode();
   useEffect(() => {
     toggleColorMode()
