@@ -9,16 +9,14 @@ import { Footer } from '../components/Footer';
 import CaptionCarousel from '../components/CaptionCarouse';
 import { sliderHome } from '../services/infoHomeSliderData';
 import TagManager from 'react-gtm-module';
-
-
+import { useEffect } from 'react';
 
 export default function Home() {
 
-//   const tagManagerArgs = {
-//     gtmId: 'AW-11067166937'
-// }
+useEffect(() => {
+	TagManager.initialize({ gtmId: 'AW-11067166937' });
+  }, []);
 
-// TagManager.initialize(tagManagerArgs)
 
 
   const dataCard = data;
