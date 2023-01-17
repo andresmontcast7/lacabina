@@ -8,17 +8,18 @@ import { Wrap, WrapItem } from '@chakra-ui/layout';
 import { Footer } from '../components/Footer';
 import CaptionCarousel from '../components/CaptionCarouse';
 import { sliderHome } from '../services/infoHomeSliderData';
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module';
 
 
 
 export default function Home() {
 
-  const tagManagerArgs = {
-    gtmId: 'AW-11067166937'
-}
+//   const tagManagerArgs = {
+//     gtmId: 'AW-11067166937'
+// }
 
-TagManager.initialize(tagManagerArgs)
+// TagManager.initialize(tagManagerArgs)
+
 
   const dataCard = data;
 
