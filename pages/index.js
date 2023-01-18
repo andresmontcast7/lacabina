@@ -10,12 +10,14 @@ import CaptionCarousel from '../components/CaptionCarouse';
 import { sliderHome } from '../services/infoHomeSliderData';
 import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
-
+import Script from 'next/script';
 export default function Home() {
 
 useEffect(() => {
-	TagManager.initialize({ gtmId: 'GT-K5QNG98' });
+	TagManager.initialize({ gtmId: 'GTM-PC7D2RD' });
   }, []);
+
+
 
 
 
