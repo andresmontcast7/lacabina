@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 export default function Home() {
 
 useEffect(() => {
-	TagManager.initialize({ gtmId: 'AW-11067166937' });
+	TagManager.initialize({ gtmId: 'GT-K5QNG98' });
   }, []);
 
 
