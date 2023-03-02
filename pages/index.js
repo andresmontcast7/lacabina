@@ -11,12 +11,26 @@ import { sliderHome } from '../services/infoHomeSliderData';
 import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
 import Script from 'next/script';
+import { useRouter } from 'next/router'
 export default function Home() {
+
+  const router = useRouter()
 
 useEffect(() => {
 	TagManager.initialize({ gtmId: 'G-B8HQP6BTD1' }); //GTM-PC7D2RD Anterior
   }, []);
+useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('1655058271617461') // facebookPixelId
+        ReactPixel.pageView()
 
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView()
+        })
+      })
+  }, [router.events])
 
 
 
@@ -28,7 +42,7 @@ useEffect(() => {
       <Head>
         <title>La Cabina Gt</title>
         <meta name="description" content="¡Haga que su evento sea inolvidable con nuestro servicio de Cabinas 360!" />
-        <link rel="icon" href="https://www.lacabinagt.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcabinaB.f8f47725.png&w=1920&q=75" />
+        <link rel="icon" href="/favicon.ico" />
 
       </Head>
       
