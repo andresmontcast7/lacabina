@@ -41,6 +41,7 @@ useEffect(() => {
         <title>La Cabina Gt</title>
         <meta name="description" content="¡Haga que su evento sea inolvidable con nuestro servicio de Cabinas 360!" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="facebook-domain-verification" content="tq5l8o1yhhb8usdwd7te211ut8xzxl" />
 
       </Head>
       
