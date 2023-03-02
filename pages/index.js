@@ -23,7 +23,7 @@ useEffect(() => {
     import('react-facebook-pixel')
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init('511346854525312&ev') // facebookPixelId
+        ReactPixel.init('511346854525312') // facebookPixelId
         ReactPixel.pageView()
 
         router.events.on('routeChangeComplete', () => {
@@ -31,8 +31,6 @@ useEffect(() => {
         })
       })
   }, [router.events])
-
-  
 
 
   const dataCard = data;
