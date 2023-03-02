@@ -14,7 +14,7 @@ import Script from 'next/script';
 export default function Home() {
 
 useEffect(() => {
-	TagManager.initialize({ gtmId: 'GTM-PC7D2RD' });
+	TagManager.initialize({ gtmId: 'G-B8HQP6BTD1' }); //GTM-PC7D2RD Anterior
   }, []);
 
 
