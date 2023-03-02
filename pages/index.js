@@ -17,7 +17,7 @@ export default function Home() {
   const router = useRouter()
 
 useEffect(() => {
-	TagManager.initialize({ gtmId: 'G-B8HQP6BTD1' }); //GTM-PC7D2RD Anterior
+	TagManager.initialize({ gtmId: 'GTM-TX4BC6Q' }); //GTM-PC7D2RD Anterior
   }, []);
 useEffect(() => {
     import('react-facebook-pixel')
