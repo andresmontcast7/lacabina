@@ -79,11 +79,7 @@ const MobileMenu = ()=>{
 
 
 export const Header = () => { 
-  const { colorMode, toggleColorMode } = useColorMode();
-  useEffect(() => {
-    toggleColorMode()
-    
-   }, []);
+ 
    
   return (
  <Box shadow="sm" padding="3"  backgroundColor="black"  >
@@ -103,8 +99,11 @@ export const Header = () => {
   <NextLink href='/servicios' passHref >
     <Link   display={{base:"none",lg:"inline-block"}}> Videos & Servicos</Link>
     </NextLink>
-    <NextLink  href='/servicios' passHref >
-    <Link   display={{base:"none",lg:"inline-block"}}>About</Link>
+    {/* <NextLink  href='/gallery' passHref >
+    <Link   display={{base:"none",lg:"inline-block"}}>Eventos</Link>
+    </NextLink> */}
+    <NextLink  href='/blogs' passHref >
+    <Link   display={{base:"none",lg:"inline-block"}}>Blogs</Link>
     </NextLink>
     <Link href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"   display={{base:"none",lg:"inline-block"}}><Button rightIcon={<MdCall />} colorScheme='yellow' variant='solid'>
     Contactanos

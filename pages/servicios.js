@@ -1,6 +1,5 @@
 import CaptionCarousel from "../components/CaptionCarouse";
 import { Footer } from "../components/Footer";
-import Header from "../components/Header";
 import HeroService from "../components/HeroService";
 import { Plan } from "../components/Plan";
 import cards from "../services/infoSlider";
@@ -41,7 +40,6 @@ function servicios() {
   return (
     <>
       {/* NAV */}
-      <Header></Header>
       {/* Hero */}
       <HeroService></HeroService>
       {/* SLIDER */}

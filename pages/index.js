@@ -39,7 +39,7 @@ useEffect(() => {
     <div className={styles.container}>
       <Head>
         <title>La Cabina Gt</title>
-        <meta name="description" content="¡Haga que su evento sea inolvidable con nuestro servicio de Cabinas 360!" />
+        <meta name="description" content="¡Haga que su evento sea inolvidable con nuestro servicio de Cabinas en Guatemala !" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="facebook-domain-verification" content="tq5l8o1yhhb8usdwd7te211ut8xzxl" />
 
@@ -47,7 +47,7 @@ useEffect(() => {
       
 
        {/* HEADER */}
-       <Header ></Header>
+     
         {/* VIDEO */}
        <VideoHeader autoPlay={true} loop={true} video={"litecabin.mp4"}></VideoHeader>
        {/* Cards */}
