@@ -11,7 +11,7 @@ export const Seo = ({
   return (
     <Head>
       <title>{title}</title>
-      <meta name="descriptions" content={description} key="descriptions" />
+      <meta name="description" content={description} key="description" />
       <meta property="og:url" content={`https://www.lacabinagt.com${url}`} key="og:url" />
       <meta property="og:title" content={title} key="og:title" />
       <meta
