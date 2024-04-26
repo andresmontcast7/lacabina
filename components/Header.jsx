@@ -55,6 +55,9 @@ const MobileMenu = ()=>{
       <NextLink href="/servicios">
       <MenuItem>Videos & Servicos </MenuItem>
       </NextLink>
+      <NextLink href="/blogs'" passHref>
+      <MenuItem  >Blogs</MenuItem>
+      </NextLink>
       <NextLink href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80">
       <MenuItem> Contactanos </MenuItem>
       </NextLink>
