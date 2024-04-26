@@ -12,7 +12,7 @@ export const Seo = ({
     <Head>
       <title>{title}</title>
       <meta name="descriptions" content={description} key="descriptions" />
-      <meta property="og:url" content={`https://strapi-production-935c.up.railway.app${url}`} key="og:url" />
+      <meta property="og:url" content={`https://www.lacabinagt.com${url}`} key="og:url" />
       <meta property="og:title" content={title} key="og:title" />
       <meta
         property="og:description"
@@ -20,13 +20,7 @@ export const Seo = ({
         key="og:description"
       />
       {/* <meta property="og:imge" content={shareImg} key="og:image" /> */}
-      <link rel="canonical" href={`https://strapi-production-935c.up.railway.app${url}`} />
-      {/* {preventIndexing && (
-        <>
-          <meta name="robots" content='noindex'/>
-          <meta name="googlebot" content="noindex" key="descriptions" />
-        </>
-      )}  */}
+      <link rel="canonical" href={`https://www.lacabinagt.com${url}`} />
     </Head>
   );
 };
