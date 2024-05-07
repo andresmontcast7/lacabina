@@ -1,16 +1,12 @@
 import Head from 'next/head';
-import { Header } from '../components/Header';
 import { InfoCards } from '../components/InfoCards';
 import { VideoHeader } from '../components/VideoHeader';
 import styles from '../styles/Home.module.css';
 import data from '../services/infoCardsData'
 import { Wrap, WrapItem } from '@chakra-ui/layout';
 import { Footer } from '../components/Footer';
-import CaptionCarousel from '../components/CaptionCarouse';
-import { sliderHome } from '../services/infoHomeSliderData';
 import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
-import Script from 'next/script';
 import { useRouter } from 'next/router'
 export default function Home() {
 
@@ -38,11 +34,19 @@ useEffect(() => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>La Cabina Gt</title>
+        <title>La Cabina | Cabina de Fotos Guatemala</title>
         <meta name="description" content="¡Haga que su evento sea inolvidable con nuestro servicio de Cabinas en Guatemala !" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="facebook-domain-verification" content="tq5l8o1yhhb8usdwd7te211ut8xzxl" />
-
+        <meta name="description" content={"Cabina de Fotos en Guatemala! y Photo Booths Desde bodas hasta eventos corporativos, cumpleaños, fiestas crea recuerdos únicos con nuestras divertidas Cabina de fotos en  Guatemala. ¡Contacta con nosotros para darle un toque especial a tu próximo evento!"} key="description" />
+      <meta property="og:url" content={`https://www.lacabinagt.com`} key="og:url" />
+      <meta property="og:title" content={`La Cabina | Cabina de Fotos Guatemala`} key="og:title" />
+      <meta
+        property="og:description"
+        content={"Cabina de Fotos en Guatemala! y Photo Booths Desde bodas hasta eventos corporativos, cumpleaños, fiestas crea recuerdos únicos con nuestras divertidas Cabina de fotos en  Guatemala. ¡Contacta con nosotros para darle un toque especial a tu próximo evento!"}
+        key="og:description"
+      />
+      <link rel="canonical" href={`https://www.lacabinagt.com`} />
       </Head>
       
 
