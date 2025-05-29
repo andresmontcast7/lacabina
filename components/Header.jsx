@@ -65,10 +65,10 @@ const MobileMenu = () => {
           <NextLink href="/blogs" passHref>
             <MenuItem>Blogs</MenuItem>
           </NextLink>
-          <NextLink href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80">
+          <NextLink href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80">
             <MenuItem> Contactanos </MenuItem>
           </NextLink>
-          <NextLink href="https://api.whatsapp.com/send?phone=50254446684&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80">
+          <NextLink href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80">
             <MenuItem> Agendar Fecha </MenuItem>
           </NextLink>
         </MenuGroup>
@@ -128,7 +128,7 @@ export const Header = () => {
           <Link display={{ base: "none", lg: "inline-block" }}>Blogs</Link>
         </NextLink>
         <Link
-          href="https://api.whatsapp.com/send?phone=50254446684&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"
+          href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"
           display={{ base: "none", lg: "inline-block" }}
         >
           <Button rightIcon={<MdCall />} colorScheme="yellow" variant="solid">
@@ -136,7 +136,7 @@ export const Header = () => {
           </Button>
         </Link>
         <Link
-          href="https://api.whatsapp.com/send?phone=50254446684&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80"
+          href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80"
           display={{ base: "none", lg: "inline-block" }}
         >
           {" "}
