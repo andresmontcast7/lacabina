@@ -39,47 +39,45 @@ function Example() {
 const MobileMenu = () => {
   return (
     <Menu>
-      <Box>
-        <MenuButton
-          display={{ base: "inline-block", lg: "none" }}
-          as={HamburgerIcon}
-          fontSize="2rem"
-          color="white"
-        ></MenuButton>
-      </Box>
+      <MenuButton
+        as={Button}
+        display={{ base: "flex", lg: "none" }}
+        variant="unstyled"
+        color="white"
+        aria-label="Menu"
+      >
+        <HamburgerIcon fontSize="2rem" />
+      </MenuButton>
 
-      <MenuList>
+      <MenuList zIndex={10}>
         <MenuGroup>
           <Link href="/" passHref legacyBehavior>
-            <MenuItem as="a">Home</MenuItem>
-          </Link>
-          <Link href="/" passHref legacyBehavior>
-            <MenuItem as="a">Fotografía</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Home</MenuItem>
           </Link>
           <Link href="/gallery" passHref legacyBehavior>
-            <MenuItem as="a">Fotos</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Fotos</MenuItem>
           </Link>
           {/* <Link href="/" passHref legacyBehavior>
-            <MenuItem as="a">Cabina Vintage</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Cabina Vintage</MenuItem>
           </Link> */}
           {/* <Link href="/servicios" passHref legacyBehavior>
-            <MenuItem as="a">Photobooth 360</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Photobooth 360</MenuItem>
           </Link> */}
           <Link href="/blogs" passHref legacyBehavior>
-            <MenuItem as="a">Blogs</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Blogs</MenuItem>
           </Link>
           <Link href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80" passHref legacyBehavior>
-            <MenuItem as="a">Contactanos</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Contactanos</MenuItem>
           </Link>
           <Link href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80" passHref legacyBehavior>
-            <MenuItem as="a">Agendar Fecha</MenuItem>
+            <MenuItem as="a" color="gray.800" _dark={{ color: "white" }}>Agendar Fecha</MenuItem>
           </Link>
         </MenuGroup>
         <MenuDivider />
-        <MenuGroup title="Help">
-          <MenuItem>About</MenuItem>
+        {/* <MenuGroup title="Help">
+          <MenuItem color="gray.800" _dark={{ color: "white" }}>About</MenuItem>
           <Example></Example>
-        </MenuGroup>
+        </MenuGroup> */}
       </MenuList>
     </Menu>
   );
