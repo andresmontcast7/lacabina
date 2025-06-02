@@ -16,13 +16,18 @@ import Lottie from 'lottie-react'
 
 export const HeroPublic = ({title, title2, desc , animation}) => {
     return (
-        <Container maxW={'7xl'}>
+        <Container maxW={'7xl'} bg="rgba(255, 255, 255, 0.9)" borderRadius="lg" p={4} my={4} boxShadow="md">
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           pt={{ base: 20, md: 1 }}
           direction={{ base: 'column', md: 'row' }}>
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Stack 
+            flex={1} 
+            spacing={{ base: 5, md: 10 }}
+            p={4}
+            borderRadius="lg"
+          >
             <Heading
               lineHeight={1.1}
               fontWeight={600}
@@ -30,10 +35,12 @@ export const HeroPublic = ({title, title2, desc , animation}) => {
               <Text
                 as={'span'}
                 position={'relative'}
+                color="gray.800"
+                textShadow="0px 1px 2px rgba(0,0,0,0.1)"
                 _after={{
                   content: "''",
                   width: 'full',
-                  height: '30%',
+                  height: '50%',
                   position: 'absolute',
                   bottom: 1,
                   left: 0,
@@ -43,11 +50,11 @@ export const HeroPublic = ({title, title2, desc , animation}) => {
                 {title}
               </Text>
               <br />
-              <Text as={'span'} color={'yellow.400'}>
+              <Text as={'span'} color={'yellow.500'} textShadow="0px 1px 2px rgba(0,0,0,0.1)">
               {title2}
               </Text>
             </Heading>
-            <Text color={'gray.500'}>
+            <Text color={'gray.700'} fontWeight="medium">
             {desc}
             {/* Nuestro Video booth 360 es la perfecta opción para bodas o cualquier tipo de evento, este servicio se destaca por su innovación, y diseño de su montaje y la asombrosa calidad de videos que te brinda.
             Ofrecemos nuestros servicios de Video Booth 360 en todo Guatemala. */}

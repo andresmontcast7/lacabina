@@ -82,7 +82,7 @@ export const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2024 La Cabina Guatemala. All rights reserved.</Text>
+          <Text>© 2025 La Cabina Guatemala. All rights reserved.</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaMailBulk />

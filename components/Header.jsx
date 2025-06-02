@@ -1,4 +1,4 @@
-import { Box, Link } from "@chakra-ui/layout";
+import { Box, Link as ChakraLink } from "@chakra-ui/layout";
 import Image from "next/image";
 import React from "react";
 import logo from "../assets/logo/cabinaB.png";
@@ -8,7 +8,7 @@ import { BsFillCalendar2DayFill } from "react-icons/bs";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { FiMoon } from "react-icons/fi";
-import * as NextLink from "next/link";
+import Link from "next/link";
 import {
   Menu,
   MenuButton,
@@ -50,27 +50,30 @@ const MobileMenu = () => {
 
       <MenuList>
         <MenuGroup>
-          <NextLink href="/" passHref>
-            <MenuItem>Home</MenuItem>
-          </NextLink>
-          <NextLink href="/" passHref>
-            <MenuItem>Fotografía</MenuItem>
-          </NextLink>
-          {/* <NextLink href="/" passHref>
-            <MenuItem>Cabina Vintage</MenuItem>
-          </NextLink> */}
-          {/* <NextLink href="/servicios">
-            <MenuItem>Photobooth 360</MenuItem>
-          </NextLink> */}
-          <NextLink href="/blogs" passHref>
-            <MenuItem>Blogs</MenuItem>
-          </NextLink>
-          <NextLink href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80">
-            <MenuItem> Contactanos </MenuItem>
-          </NextLink>
-          <NextLink href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80">
-            <MenuItem> Agendar Fecha </MenuItem>
-          </NextLink>
+          <Link href="/" passHref legacyBehavior>
+            <MenuItem as="a">Home</MenuItem>
+          </Link>
+          <Link href="/" passHref legacyBehavior>
+            <MenuItem as="a">Fotografía</MenuItem>
+          </Link>
+          <Link href="/gallery" passHref legacyBehavior>
+            <MenuItem as="a">Fotos</MenuItem>
+          </Link>
+          {/* <Link href="/" passHref legacyBehavior>
+            <MenuItem as="a">Cabina Vintage</MenuItem>
+          </Link> */}
+          {/* <Link href="/servicios" passHref legacyBehavior>
+            <MenuItem as="a">Photobooth 360</MenuItem>
+          </Link> */}
+          <Link href="/blogs" passHref legacyBehavior>
+            <MenuItem as="a">Blogs</MenuItem>
+          </Link>
+          <Link href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80" passHref legacyBehavior>
+            <MenuItem as="a">Contactanos</MenuItem>
+          </Link>
+          <Link href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80" passHref legacyBehavior>
+            <MenuItem as="a">Agendar Fecha</MenuItem>
+          </Link>
         </MenuGroup>
         <MenuDivider />
         <MenuGroup title="Help">
@@ -98,46 +101,54 @@ export const Header = () => {
         </Box>
         {/* MOBILE MENU */}
 
-        <NextLink href="/" passHref>
-          <Link display={{ base: "none", lg: "inline-block" }}>Home</Link>
-        </NextLink>
-        {/* <NextLink href="/servicios" passHref>
-          <Link display={{ base: "none", lg: "inline-block" }}>
+        <Link href="/" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>Home</ChakraLink>
+        </Link>
+        {/* <Link href="/servicios" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>
             {" "}
             Fotografía
-          </Link>
-        </NextLink> */}
+          </ChakraLink>
+        </Link> */}
 
-        <NextLink href="/servicios" passHref>
-          <Link display={{ base: "none", lg: "inline-block" }}>
+        <Link href="/servicios" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>
             {" "}
             Photobooth 360
-          </Link>
-        </NextLink>
+          </ChakraLink>
+        </Link>
 
-        {/* <NextLink href="/servicios" passHref>
-          <Link display={{ base: "none", lg: "inline-block" }}>
+        <Link href="/gallery" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>Fotos</ChakraLink>
+        </Link>
+
+        {/* <Link href="/servicios" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>
             {" "}
             Cabina Vintage
-          </Link>
-        </NextLink> */}
-        {/* <NextLink  href='/gallery' passHref >
-    <Link   display={{base:"none",lg:"inline-block"}}>Eventos</Link>
-    </NextLink> */}
-        <NextLink href="/blogs" passHref>
-          <Link display={{ base: "none", lg: "inline-block" }}>Blogs</Link>
-        </NextLink>
-        <Link
+          </ChakraLink>
+        </Link> */}
+        {/* <Link href='/gallery' passHref legacyBehavior>
+          <ChakraLink display={{base:"none",lg:"inline-block"}}>Eventos</ChakraLink>
+        </Link> */}
+        <Link href="/blogs" passHref legacyBehavior>
+          <ChakraLink display={{ base: "none", lg: "inline-block" }}>Blogs</ChakraLink>
+        </Link>
+        
+        <ChakraLink
           href="https://api.whatsapp.com/send?phone=50236741675&text=Hola%20Me%20gustaria%20mas%20%20Info%20%F0%9F%98%80"
           display={{ base: "none", lg: "inline-block" }}
+          isExternal
         >
           <Button rightIcon={<MdCall />} colorScheme="yellow" variant="solid">
             Contactanos
           </Button>
-        </Link>
-        <Link
+        </ChakraLink>
+        
+        <ChakraLink
           href="https://api.whatsapp.com/send?phone=50236741675&text=Buenas%2C%20me%20gustaria%20angendar%20una%20fecha%20!%20%F0%9F%93%86%F0%9F%98%80"
           display={{ base: "none", lg: "inline-block" }}
+          isExternal
         >
           {" "}
           <Button
@@ -147,7 +158,8 @@ export const Header = () => {
           >
             Agendar Fecha
           </Button>
-        </Link>
+        </ChakraLink>
+        
         <Box display={{ base: "none", lg: "inline-block" }}>
           <Example></Example>
         </Box>
